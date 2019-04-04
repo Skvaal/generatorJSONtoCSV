@@ -28,6 +28,7 @@
             console.log(values.join(','));
         }
 
+        return csvRows.join('\n');
     };
 
     const download = function (data) {
@@ -40,8 +41,6 @@
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-
-
     };
 
     const getReport = async function() {
